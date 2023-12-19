@@ -27,5 +27,10 @@ tasks.test {
 tasks.compileJava {
     options.encoding = "UTF-8"
     version = "1.8"
-    base.archivesName.set("LunarPunish")
+}
+
+tasks {
+    withType<Jar> {
+        archiveFileName.set("LunarPunish.jar")
+    }
 }
